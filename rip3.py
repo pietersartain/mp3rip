@@ -8,7 +8,7 @@ import string
 import urllib
 import re
 import pprint
-import pylast # http://code.google.com/p/pylast/
+from pylast import pylast # http://code.google.com/p/pylast/
 import json
 import codecs
 from optparse import OptionParser
