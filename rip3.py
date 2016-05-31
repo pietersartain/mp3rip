@@ -117,7 +117,7 @@ def CDDB_info(CDINFO, DISCID):
 
 CDPARANOIA='cdparanoia'
 CDINFO='/dev/sr0'
-OUTDIR='/mnt/storage/media/music'
+OUTDIR='/tmp'
 DEBUG = True
 
 PARANOIA = CDPARANOIA + ' -w -d ' + CDINFO + ' -B'
