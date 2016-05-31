@@ -232,8 +232,8 @@ if (info):
 
   # If we get this far, we really should ensure all the directories exist.
   if (os.path.isdir(ROOTDIR)):
-    debug('mv "'+ROOTDIR+'" "'+ROOTDIR+'_OLD"', options.DEBUG)
-  debug('mkdir -p "'+ROOTDIR+'"', options.DEBUG)
+    debug("mv '"+ROOTDIR+"' '"+ROOTDIR+"_OLD'", options.DEBUG)
+  debug("mkdir -p '"+ROOTDIR+"'", options.DEBUG)
 
   # Let's deal with the artwork
   if (options.ARTFILE is not None):
@@ -294,7 +294,7 @@ if (info):
     FNAME = "/tmp/track"+tid+".cdda.wav"
 
     TNAME = ROOTDIR+'/'+tid+' - ' + sanitize_filename(track_names[i]) + '.mp3'
-    LAME_DO = 'lame -h --tt "'+track_names[i]+'" --ta "'+artist_name+'" --tn '+tid+' --tl "'+album_name+'" '+options.LAME_OPTS+' "'+FNAME+'" "'+TNAME+'"'
+    LAME_DO = "lame -h --tt '"+track_names[i]+"' --ta '"+artist_name+"' --tn "+tid+" --tl '"+album_name+"' "+options.LAME_OPTS+" '"+FNAME+"' '"+TNAME+"'"
     debug(LAME_DO, options.DEBUG)
 
     # Copy the artwork into the file
